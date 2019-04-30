@@ -21,14 +21,22 @@
     </header>
     <div class="contact-container">
         <form action="">
-            <label for="">Name:</label>
-            <input type="text" name="" placeholder="Enter full name" id="fullname">
+            <fieldset>
+                <legend>Drop Us a Line!</legend>
+                <label for="">Name:</label>
+                <input type="text" name="fullname" placeholder="Enter full name" id="fullname">
+                <br>
 
-            <label for="">Email</label>
-            <input type="email" name="" id="email">
+                <label for="">Email:</label>
+                <input type="email" name="email" placeholder="username@domain.com" id="email">
+                <br>
 
-            <label for="">Questions or Comments</label>
-            <textarea name="" id="" placeholder="Questions? Comments?" cols="30" rows="10"></textarea>
+                <label for="comments">Questions or Comments:</label>
+                <textarea name="" id="" placeholder="Questions? Comments?" cols="50" rows="15"></textarea>
+            </fieldset>
+            <div class="btn-wrapper">
+                <button class="contact-btn">Submit</button>
+            </div>
         </form>
     </div>
     <footer>

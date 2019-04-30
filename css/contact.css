@@ -160,6 +160,18 @@ h4,
 h5 {
   font-family: 'Cabin', Verdana, sans-serif;
 }
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+h4 {
+  font-size: 2.5rem;
+}
 .container {
   max-width: 800px;
   width: 100%;
@@ -172,7 +184,7 @@ header {
 }
 header nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   background-color: transparent;
   font-size: 1.6rem;
 }
@@ -206,4 +218,50 @@ footer {
   margin: 1.5rem 1.5rem;
   color: #000;
   font-size: 1.6rem;
+}
+form {
+  margin: 2.5rem 2.5rem;
+}
+form .contact-btn {
+  border-radius: 0.5rem;
+  background-color: #ffa17a;
+  color: #f3eada;
+  border: 0;
+  font-size: 1.6rem;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+  line-height: 1.2;
+  white-space: nowrap;
+  text-decoration: none;
+  padding: 0.25rem 0.5rem;
+  margin-top: 0.25rem;
+  margin-right: 0.25rem;
+  margin-bottom: 0.25rem;
+  margin-left: 0.25rem;
+  width: 30%;
+  height: 3.5rem;
+}
+form label {
+  font-size: 1.8rem;
+  margin-left: 1.5rem;
+}
+form textarea {
+  display: block;
+}
+form input {
+  display: inline-block;
+}
+form fieldset {
+  font-size: 2.5rem;
+}
+form .btn-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3rem;
+}
+.contact-container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
 }
