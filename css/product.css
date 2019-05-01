@@ -1,5 +1,7 @@
 /* colors */
 /* fonts */
+/* font sizes */
+/* Media screen sizes */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -166,6 +168,9 @@ h1 {
 h2 {
   font-size: 3.2rem;
 }
+h3 {
+  font-size: 2.8rem;
+}
 h4 {
   font-size: 2.5rem;
 }
@@ -179,17 +184,42 @@ header {
   justify-content: space-around;
   margin-top: 2rem;
 }
+header .logo {
+  margin: 2.5rem 0;
+}
+@media (max-width: 50rem) {
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
 header nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   background-color: transparent;
   font-size: 1.6rem;
+}
+@media (max-width: 50rem) {
+  header nav {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 2.5rem;
+  }
 }
 header nav a {
   margin-right: 1.5rem;
   margin-top: 1.5rem;
   text-decoration: none;
   color: #f3eada;
+}
+@media (max-width: 50rem) {
+  header nav a {
+    margin: 0 2.5rem 1.5rem 1.5rem;
+  }
 }
 header nav .signup-btn {
   border-radius: 0.5rem;
@@ -210,9 +240,113 @@ header nav .signup-btn {
   width: 30%;
   height: 3.5rem;
 }
+@media (max-width: 50rem) {
+  header nav .signup-btn {
+    border-radius: 0.5rem;
+    background-color: #ffa17a;
+    color: #f3eada;
+    border: 0;
+    font-size: 1.6rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    line-height: 1.2;
+    white-space: nowrap;
+    text-decoration: none;
+    padding: 0.25rem 0.5rem;
+    margin: 0.25rem;
+    width: 100%;
+    height: 5rem;
+  }
+}
 footer {
   text-align: center;
   margin: 1.5rem 1.5rem;
   color: #000;
   font-size: 1.6rem;
+}
+.product-container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+@media (max-width: 50rem) {
+  .product-container {
+    max-width: 50rem;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 80rem) {
+  .product-container {
+    max-width: 80rem;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+.pro-features,
+.pro-services,
+.app-praise {
+  margin: 2.5rem 2rem;
+}
+.pro-features ul {
+  font-size: 1.6rem;
+}
+.pro-features ul li {
+  line-height: 2.5rem;
+  margin: 1.5rem;
+}
+.pro-services h4 {
+  margin: 1rem;
+}
+.pro-services p {
+  font-size: 1.6rem;
+  padding: 1.5rem;
+}
+.pro-services a {
+  color: #ffa17a;
+  text-decoration: none;
+}
+.praise-heading {
+  text-align: center;
+}
+.app-praise {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+}
+@media (max-width: 50rem) {
+  .app-praise {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+  }
+}
+@media (max-width: 80rem) {
+  .app-praise {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+}
+.praise-card {
+  margin: 2.5rem 2.5rem;
+  background-color: #f3eada;
+  color: #5BB3B0;
+  width: 30rem;
+  height: 25rem;
+}
+.praise-card h4 {
+  margin: 1rem;
+}
+.praise-card p {
+  margin: 1rem;
+  font-size: 1.4rem;
 }
