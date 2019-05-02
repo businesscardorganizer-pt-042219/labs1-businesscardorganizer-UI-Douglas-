@@ -7,6 +7,7 @@ form {
     label {
         font-size: 1.8rem;
         margin-left: 1.5rem;
+        margin-top: 1.5rem;
     }
     textarea {
         display: block;
@@ -16,6 +17,18 @@ form {
     }
     fieldset {
         font-size: 2.5rem;
+        @media @tablet {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+        @media @phone {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
     }
     .btn-wrapper {
         display: flex;

@@ -188,6 +188,11 @@ header .logo {
   margin: 2.5rem 0;
 }
 @media (max-width: 50rem) {
+  header .logo {
+    margin-top: 1rem;
+  }
+}
+@media (max-width: 50rem) {
   header {
     display: flex;
     justify-content: center;
@@ -206,6 +211,7 @@ header nav {
   header nav {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
     margin-top: 2.5rem;
   }
@@ -214,11 +220,13 @@ header nav a {
   margin-right: 1.5rem;
   margin-top: 1.5rem;
   text-decoration: none;
+  font-weight: bold;
   color: #f3eada;
 }
 @media (max-width: 50rem) {
   header nav a {
     margin: 0 2.5rem 1.5rem 1.5rem;
+    font-weight: bold;
   }
 }
 header nav .signup-btn {
@@ -289,6 +297,7 @@ form .contact-btn {
 form label {
   font-size: 1.8rem;
   margin-left: 1.5rem;
+  margin-top: 1.5rem;
 }
 form textarea {
   display: block;
@@ -298,6 +307,22 @@ form input {
 }
 form fieldset {
   font-size: 2.5rem;
+}
+@media (max-width: 80rem) {
+  form fieldset {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 50rem) {
+  form fieldset {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 form .btn-wrapper {
   display: flex;
