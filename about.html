@@ -9,48 +9,89 @@
 </head>
 <body>
     <header>
-        <h1>App Logo Here</h1>
+        <div class="logo">
+            <img src="img/card-logo-white.png" alt="company logo">
+        </div>
             <nav>
                 <a href="index.html">Home</a>
                 <a href="product.html">Product</a>
                 <a href="about.html">About</a>
                 <a href="contact.html">Contact</a>
-                <a href="https://hopeful-ride-580fdd.netlify.com/login">Login</a>
-                <button class="signup-btn">Sign Up</button>
+                <a href="https://hopeful-ride-580fdd.netlify.com">Login</a>
+                <button class="signup-btn"><a href="https://hopeful-ride-580fdd.netlify.com">Sign Up</a></button>
             </nav>
     </header>
     <div class="about-container">
+            <div class="tabs">
+                <div class="jobs">
+                    <span class="title">Job Roles:</span>
+                    <div data-tab="all" class="tab active-tab">ALL</div>
+                    <div data-job-role="Back-End Architect" class="tab">JAVASCRIPT</div>
+                    <div data-job-role="Front-End Architect" class="tab">TECHNOLOGY</div>
+                    <div data-job-role="Web UI Developer" class="tab">NODE.JS</div>
+                </div>
+            </div>
         <main class="cards-area">
             <h1>Meet the Team</h1>
-            <div class="card">
-                <h4>Member Name</h4>
-                <p>Member Info</p>
-                <p>Member Social links</p>
+            <div class="card" data-job-role="Back-End Architect">
+                <div class="member-name">Kseniya Platonava</div>
+                <div class="img-qr-area">
+                    <img src="img/team1.jpg" alt="Kseniya Platonava">
+                    <img src="img/qrcode.jpg" alt="fake QR code">
+                </div>
+                <div class="member-content">
+                    <p>Member Social links</p>
+                </div>  
             </div>
-            <div class="card">
-                <h4>Member Name</h4>
-                <p>Member Info</p>
-                <p>Member Social links</p>
+            <div class="card" data-job-role="Front-End Architect">
+                <div class="member-name">Orangel Mendez</div>
+                <div class="img-qr-area">
+                    <img src="img/team5.jpg" alt="Orangel Mendez">
+                    <img src="img/qrcode.jpg" alt="fake QR code">
+                </div>
+                <div class="member-content">
+                    <p>Member Social links</p>
+                </div>
             </div>
-            <div class="card">
-                <h4>Member Name</h4>
-                <p>Member Info</p>
-                <p>Member Social links</p>
+            <div class="card" data-job-role="Front-End Architect">
+                <div class="member-name">Kasia Bondarava</div>
+                <div class="img-qr-area">
+                    <img src="img/team3.jpg" alt="Kasia Bondarava">
+                    <img src="img/qrcode.jpg" alt="fake QR code">
+                </div>
+                <div class="member-content">
+                     <p>Member Social links</p>
+                </div>
             </div>
-            <div class="card">
-                <h4>Member Name</h4>
-                <p>Member Info</p>
-                <p>Member Social links</p>
+            <div class="card" data-job-role=" Web UI Developer">
+                <div class="member-name">Jason Barr</div>
+                <div class="img-qr-area">
+                    <img src="img/team2.jpg" alt="Jason Barr">
+                    <img src="img/qrcode.jpg" alt="fake QR code">
+                </div>
+                <div class="member-content">
+                    <p>Member Social links</p>
+                </div>
             </div>
-            <div class="card">
-                <h4>Member Name</h4>
-                <p>Member Info</p>
-                <p>Member Social links</p>
+            <div class="card" data-job-role=" Web UI Developer">
+                <div class="member-name">Shawn Henry</div>
+                <div class="img-qr-area">
+                    <img src="img/team4.jpg" alt="Shawn Henry">
+                    <img src="img/qrcode.jpg" alt="fake QR code">
+                </div>
+                <div class="member-content">
+                    <p>Member Social links</p>
+                </div>
             </div>
-            <div class="card">
-                <h4>Member Name</h4>
-                <p>Member Info</p>
-                <p>Member Social links</p>
+            <div class="card" data-job-role=" Web UI Developer">
+                <div class="member-name">Douglas Campbell</h4>
+                <div class="img-qr-area">
+                    <img src="img/selfgh.jpg" alt="Douglas Campbell">
+                    <img src="img/qrcode.jpg" alt="fake QR code">
+                </div>
+                <div class="member-content">
+                    <p>Member Social links</p>
+                </div>
             </div>
         </main>
     </div>
