@@ -2,6 +2,7 @@
 /* fonts */
 /* font sizes */
 /* Media screen sizes */
+/* widths for buttons */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -259,16 +260,16 @@ header nav .signup-btn {
   margin-right: 0.25rem;
   margin-bottom: 0.25rem;
   margin-left: 0.25rem;
-  width: 30%;
+  width: 20%;
   height: 3.5rem;
 }
 header nav .signup-btn a {
-  margin-right: 1.5rem;
   margin-top: 1.5rem;
   text-decoration: none;
   font-weight: bold;
   color: #f3eada;
   border-bottom: none;
+  width: 100%;
 }
 @media (max-width: 50rem) {
   header nav .signup-btn {
@@ -314,7 +315,7 @@ form .contact-btn {
   margin-right: 0.25rem;
   margin-bottom: 0.25rem;
   margin-left: 0.25rem;
-  width: 30%;
+  width: 80%;
   height: 3.5rem;
 }
 form label {

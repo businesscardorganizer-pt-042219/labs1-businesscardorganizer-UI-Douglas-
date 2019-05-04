@@ -1,0 +1,108 @@
+.about-container {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+
+    @media @phone {
+        max-width: 50rem;
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    @media @tablet {
+        max-width: 80rem;
+        width: 85%;
+        margin: 0 auto;
+    }
+}
+.tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 1rem;
+}
+.jobs {
+    display: flex;
+    justify-content: space-around;
+    .title {
+        font-size: 2.4rem;
+    }
+    .tab {
+        border: 0.2rem solid @main-font-color;
+        padding: 0.7rem;
+        margin-left: 1rem;
+        font-size: 1.4rem;
+        &:hover {
+            background-color: @main-font-color;
+            color: @main-brand-color;
+        }
+    }
+    .active-tab {
+        background-color: @main-font-color;
+        color: @main-brand-color;
+        font-weight: bold;
+    }
+}
+
+.team-heading {
+    text-align: center;
+    margin: 2.5rem;
+}
+.cards-area {
+
+    // margin: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+
+    .card {
+        display: flex;
+        justify-content: center;
+        border: 0.1rem solid @main-font-color;
+        width: 35rem;
+        height: 25rem;
+        margin: 2rem 2rem;
+        @media @tablet {
+            border: 0.2rem solid @main-font-color;
+            width: 20rem;
+            height: 20rem;
+            margin: 2rem 2rem;  
+        }
+        .member-name {
+            padding: 1.5rem;
+            font-size: 2.4rem;
+            .text-outline();
+        }
+        .member-content {
+            padding: 1.5rem;
+            font-size: 1.6rem;
+            .text-outline();
+        }
+        .img-qr-area {
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: row;
+            flex-flow: wrap;
+            align-content: center;
+            align-items: center;
+            margin: 0 0.5rem;
+            .qr {
+                width: 7.2rem;
+                height: 7.2rem;
+                padding-left: 0.5rem;
+            }
+        }
+    }
+
+    @media @tablet {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+}

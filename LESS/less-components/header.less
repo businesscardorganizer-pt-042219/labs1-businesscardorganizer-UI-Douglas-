@@ -41,29 +41,30 @@ header {
            text-decoration: none;
            font-weight: bold;
            color: @main-font-color;
-        @media @phone {
-            margin: 0 2.5rem 1.5rem 1.5rem;
-            font-weight: bold;
-            padding: 1.5rem 0.5rem;
-            text-align: center;
-            width: 100%;
-            border-bottom: 0.2rem solid @main-font-color;
+            @media @phone {
+                margin: 0 2.5rem 1.5rem 1.5rem;
+                font-weight: bold;
+                padding: 1.5rem 0.5rem;
+                text-align: center;
+                width: 100%;
+                border-bottom: 0.2rem solid @main-font-color;
+            }
         }
-       }
-       .signup-btn{
-           a {
-            margin-right: 1.5rem;
-            margin-top: 1.5rem;
-            text-decoration: none;
-            font-weight: bold;
-            color: @main-font-color;
-            border-bottom: none;
-           }
-        .btn-style(@btn-color; 1.6rem);
-        @media @phone {
-            .mobile-btn-style(@btn-color; 1.6rem; 50rem);
-            max-width: 95%;
-        }
-    }
+
+        .signup-btn{
+            a {
+                margin-top: 1.5rem;
+                text-decoration: none;
+                font-weight: bold;
+                color: @main-font-color;
+                border-bottom: none;
+                width: 100%;
+            }
+            .btn-style(@btn-color; 1.6rem; @nav-signup);
+                @media @phone {
+                    .mobile-btn-style(@btn-color; 1.6rem; 50rem);
+                    max-width: 95%;
+                }
+            }
     }
 }

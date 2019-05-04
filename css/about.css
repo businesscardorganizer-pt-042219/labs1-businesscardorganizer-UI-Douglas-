@@ -2,6 +2,7 @@
 /* fonts */
 /* font sizes */
 /* Media screen sizes */
+/* widths for buttons */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -259,16 +260,16 @@ header nav .signup-btn {
   margin-right: 0.25rem;
   margin-bottom: 0.25rem;
   margin-left: 0.25rem;
-  width: 30%;
+  width: 20%;
   height: 3.5rem;
 }
 header nav .signup-btn a {
-  margin-right: 1.5rem;
   margin-top: 1.5rem;
   text-decoration: none;
   font-weight: bold;
   color: #f3eada;
   border-bottom: none;
+  width: 100%;
 }
 @media (max-width: 50rem) {
   header nav .signup-btn {
@@ -294,4 +295,113 @@ footer {
   margin: 1.5rem 1.5rem;
   color: #000;
   font-size: 1.6rem;
+}
+.about-container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+@media (max-width: 50rem) {
+  .about-container {
+    max-width: 50rem;
+    width: 85%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 80rem) {
+  .about-container {
+    max-width: 80rem;
+    width: 85%;
+    margin: 0 auto;
+  }
+}
+.tabs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 1rem;
+}
+.jobs {
+  display: flex;
+  justify-content: space-around;
+}
+.jobs .title {
+  font-size: 2.4rem;
+}
+.jobs .tab {
+  border: 0.2rem solid #f3eada;
+  padding: 0.7rem;
+  margin-left: 1rem;
+  font-size: 1.4rem;
+}
+.jobs .tab:hover {
+  background-color: #f3eada;
+  color: #5BB3B0;
+}
+.jobs .active-tab {
+  background-color: #f3eada;
+  color: #5BB3B0;
+  font-weight: bold;
+}
+.team-heading {
+  text-align: center;
+  margin: 2.5rem;
+}
+.cards-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.cards-area .card {
+  display: flex;
+  justify-content: center;
+  border: 0.1rem solid #f3eada;
+  width: 35rem;
+  height: 25rem;
+  margin: 2rem 2rem;
+}
+@media (max-width: 80rem) {
+  .cards-area .card {
+    border: 0.2rem solid #f3eada;
+    width: 20rem;
+    height: 20rem;
+    margin: 2rem 2rem;
+  }
+}
+.cards-area .card .member-name {
+  padding: 1.5rem;
+  font-size: 2.4rem;
+  text-shadow: -0.1rem -0.1rem 0 #000, 0.1rem -0.1rem 0 #000, -0.1rem 0.1rem 0 #000, 0.1rem 0.1rem 0 #000;
+}
+.cards-area .card .member-content {
+  padding: 1.5rem;
+  font-size: 1.6rem;
+  text-shadow: -0.1rem -0.1rem 0 #000, 0.1rem -0.1rem 0 #000, -0.1rem 0.1rem 0 #000, 0.1rem 0.1rem 0 #000;
+}
+.cards-area .card .img-qr-area {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-flow: wrap;
+  align-content: center;
+  align-items: center;
+  margin: 0 0.5rem;
+}
+.cards-area .card .img-qr-area .qr {
+  width: 7.2rem;
+  height: 7.2rem;
+  padding-left: 0.5rem;
+}
+@media (max-width: 80rem) {
+  .cards-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+  }
 }

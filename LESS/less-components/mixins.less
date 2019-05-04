@@ -1,4 +1,4 @@
-.btn-style(@bg-color; @font-sz) {
+.btn-style(@bg-color; @font-sz; @width) {
     border-radius: 0.5rem;
     background-color: @bg-color;
     color: @main-font-color;
@@ -14,7 +14,7 @@
     margin-right: 0.25rem;
     margin-bottom: 0.25rem;
     margin-left: 0.25rem;
-    width: 30%;
+    width: @width;
     height: 3.5rem;
 }
 
@@ -33,4 +33,11 @@
     margin: 0.25rem;
     width: 100%;
     height: 5rem;
+}
+
+.text-outline() {
+    text-shadow: -0.1rem -0.1rem 0 #000,
+    0.1rem -0.1rem 0 #000,
+    -0.1rem 0.1rem 0 #000,
+    0.1rem 0.1rem 0 #000;
 }

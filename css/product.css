@@ -2,6 +2,7 @@
 /* fonts */
 /* font sizes */
 /* Media screen sizes */
+/* widths for buttons */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -259,16 +260,16 @@ header nav .signup-btn {
   margin-right: 0.25rem;
   margin-bottom: 0.25rem;
   margin-left: 0.25rem;
-  width: 30%;
+  width: 20%;
   height: 3.5rem;
 }
 header nav .signup-btn a {
-  margin-right: 1.5rem;
   margin-top: 1.5rem;
   text-decoration: none;
   font-weight: bold;
   color: #f3eada;
   border-bottom: none;
+  width: 100%;
 }
 @media (max-width: 50rem) {
   header nav .signup-btn {
@@ -319,19 +320,26 @@ footer {
 .app-praise {
   margin: 2.5rem 2rem;
 }
+.pro-features h4 {
+  text-shadow: -0.1rem -0.1rem 0 #000, 0.1rem -0.1rem 0 #000, -0.1rem 0.1rem 0 #000, 0.1rem 0.1rem 0 #000;
+}
 .pro-features ul {
   font-size: 1.6rem;
+  text-shadow: -0.1rem -0.1rem 0 #000, 0.1rem -0.1rem 0 #000, -0.1rem 0.1rem 0 #000, 0.1rem 0.1rem 0 #000;
 }
 .pro-features ul li {
   line-height: 2.5rem;
   margin: 1.5rem;
+  text-shadow: -0.1rem -0.1rem 0 #000, 0.1rem -0.1rem 0 #000, -0.1rem 0.1rem 0 #000, 0.1rem 0.1rem 0 #000;
 }
 .pro-services h4 {
   margin: 1rem;
+  text-shadow: -0.1rem -0.1rem 0 #000, 0.1rem -0.1rem 0 #000, -0.1rem 0.1rem 0 #000, 0.1rem 0.1rem 0 #000;
 }
 .pro-services p {
   font-size: 1.6rem;
   padding: 1.5rem;
+  text-shadow: -0.1rem -0.1rem 0 #000, 0.1rem -0.1rem 0 #000, -0.1rem 0.1rem 0 #000, 0.1rem 0.1rem 0 #000;
 }
 .pro-services a {
   color: #ffa17a;
@@ -339,6 +347,7 @@ footer {
 }
 .praise-heading {
   text-align: center;
+  text-shadow: -0.1rem -0.1rem 0 #000, 0.1rem -0.1rem 0 #000, -0.1rem 0.1rem 0 #000, 0.1rem 0.1rem 0 #000;
 }
 .app-praise {
   display: flex;
