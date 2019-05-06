@@ -1,4 +1,4 @@
-# Marketing Webpage for Business Card Organizer
+# Marketing Webpage for Business Card Organizer (Possibly now called BizQR)
 
 ## Important Links for Project
 
