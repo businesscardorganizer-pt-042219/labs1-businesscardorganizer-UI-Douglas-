@@ -1,20 +1,82 @@
 header {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     margin-top: 2rem;
+    .logo {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        img {
+            height: 7rem;
+            @media @phone {
+                height: 12rem;
+            }
+        }
+        margin: 2.5rem 0;
+        @media @phone {
+            margin-top: 1rem;
+        }
+        h2 {
+            margin-top: 1rem;
+            display: block;
+            font-size: 3.2rem;
+            @media @phone {
+                
+                font-size: 4.8rem;
+            }
+        }
+    }
+    @media @phone {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
     nav {
        display: flex;
        justify-content: space-around;
        background-color: transparent;
        font-size: 1.6rem;
+       @media @phone {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 2.5rem;
+        width: 100%;
+    }
        a {
            margin-right: 1.5rem;
            margin-top: 1.5rem;
            text-decoration: none;
+           font-weight: bold;
            color: @main-font-color;
-       }
-       .signup-btn{
-        .btn-style(@btn-color; 1.6rem);
-    }
+            @media @phone {
+                margin: 0 2.5rem 1.5rem 1.5rem;
+                font-weight: bold;
+                padding: 1.5rem 0.5rem;
+                text-align: center;
+                width: 100%;
+                border-bottom: 0.2rem solid @main-font-color;
+            }
+        }
+
+        .signup-btn{
+            a {
+                margin-top: 1.5rem;
+                text-decoration: none;
+                font-weight: bold;
+                color: @main-font-color;
+                border-bottom: none;
+                width: 100%;
+            }
+            .btn-style(@btn-color; 1.6rem; @nav-signup);
+                @media @phone {
+                    .mobile-btn-style(@btn-color; 1.6rem; 50rem);
+                    max-width: 95%;
+                }
+            }
     }
 }

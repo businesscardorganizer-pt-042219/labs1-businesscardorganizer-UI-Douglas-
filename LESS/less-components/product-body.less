@@ -1,0 +1,102 @@
+.product-container {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+
+    @media @phone {
+        max-width: 50rem;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    @media @tablet {
+        max-width: 80rem;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+.pro-features, .pro-services, .app-praise {
+    margin: 2.5rem 2rem; 
+}
+
+.pro-features {
+    h4 {
+        .text-outline();
+    }
+    ul {
+        font-size: @standard-size;
+        .text-outline();
+        li {
+            line-height: 2.5rem;
+            margin: 1.5rem;
+            .text-outline();
+        }
+    }
+}
+
+.pro-services {
+    // margin: 1.5rem;
+    h4 {
+        margin: 1rem;
+        .text-outline();
+    }
+    p {
+        font-size: @standard-size;
+        padding: 1.5rem;
+        .text-outline();
+    }
+
+    a {
+        color: @btn-color;
+        text-decoration: none;
+    }
+}
+
+.praise-heading {
+    text-align: center;
+    .text-outline();
+}
+
+.app-praise {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+
+    @media @phone {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        // margin: 0 auto;
+    }
+
+    @media @tablet {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+}
+
+.praise-card {
+    margin: 2.5rem 2.5rem;
+    background-color: @main-font-color;
+    color: @main-brand-color;
+    width: 30rem;
+    height: 25rem;
+    h4 {
+        margin: 1rem;
+    }
+
+    p {
+        margin: 1rem;
+        font-size: 1.4rem;
+    }
+}

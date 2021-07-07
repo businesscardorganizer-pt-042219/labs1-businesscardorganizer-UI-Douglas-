@@ -1,0 +1,45 @@
+form {
+    margin: 2.5rem 2.5rem;
+
+    .contact-btn {
+        .btn-style(@btn-color; 1.6rem; @main-signup);
+    }
+    label {
+        font-size: 1.8rem;
+        margin-left: 1.5rem;
+        margin-top: 1.5rem;
+    }
+    textarea {
+        display: block;
+    }
+    input {
+        display: inline-block;
+    }
+    fieldset {
+        font-size: 2.5rem;
+        @media @tablet {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+        @media @phone {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    .btn-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 3rem;
+    }
+}
+
+.contact-container {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
